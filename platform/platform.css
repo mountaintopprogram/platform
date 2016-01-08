@@ -1,0 +1,296 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,500,700);
+
+body, input, button {
+    font-family: "Raleway", "Montserrat", sans-serif;
+    outline: none;
+}
+
+html {
+    font-size: 75%;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+    background-color: white;
+}
+
+body > header, body > footer > *:only-child, body > section > div:only-child {
+    width: 80em;
+    margin: 0 auto;
+}
+
+a {
+    color: #2e2e2e;
+}
+
+body > section:nth-of-type(odd), footer {
+    background-color: #99d6ce;
+    color: white;
+}
+
+body > section {
+    padding: 0 10%;
+}
+
+h1, h2 {
+    color: black;
+}
+
+body > section:nth-of-type(odd) h1, body > section:nth-of-type(odd) h2, footer h1, footer h2 {
+    color: white;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+section > header > h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 1.75rem;
+}
+
+section > header > p {
+    margin-top: 0;
+    font-style: italic;
+}
+
+section {
+    font-weight: 200;
+    color: #585858;
+}
+
+#Signup > div {
+    display: flex;
+}
+
+header nav * {
+    vertical-align: middle;
+    margin-right: 1.5em;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    min-height: 128px;
+}
+
+header nav li {
+    display: inline;
+}
+
+nav ul {
+    padding-top: 0.5em;
+}
+
+nav ul, nav a {
+    color: #58585a;
+    text-decoration: none;
+}
+
+nav ul li img {
+    height: 1.75em;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    min-height: 8em;
+    margin-top: 7em;
+}
+
+.TwoCol .FormContainer, input {
+    border: 2px solid #62baa8;
+}
+
+.Clear {
+    clear: both;
+}
+
+#Signup {
+    min-height: 41.5em;
+    vertical-align: middle;
+}
+
+.TwoCol {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.TwoCol .FormContainer {
+    background-color: white;
+    padding: 2em;
+    border-radius: 35px;
+}
+
+#Signup .Left, #SignupForm input, #SignupForm button {
+    font-size: 1.5rem;
+}
+
+#Signup .Left {
+    padding-right: 5em;
+    line-height: 1.25;
+}
+
+#SignupForm input {
+    font-weight: 200;
+    padding: 0.5em;
+    background-color: #e6e5e6;
+    border-radius: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0.4em;
+}
+
+#SignupForm fieldset {
+    border: none;
+    padding: 0;
+    margin-left: 0;
+    width: 100%;
+}
+
+#SignupForm fieldset input {
+    display: inline;
+    width: 49%;
+    margin-left: 0;
+}
+
+#SignupForm fieldset input:first-child {
+    margin-right: 2%;
+}
+
+#SignupForm button {
+    margin-top: 1em;
+    background-color: #20ac91;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.3em 2em 0.5em 1em;
+}
+
+#Description, #Description > section {
+    margin-top: 7em;
+    clear: both;
+    text-align: left;
+}
+
+#Description > header {
+    text-align: center;
+}
+
+#Description > section {
+    max-width: 60em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#Description > section > img {
+    float: right;
+    margin-left: 6em;
+    max-width: 50%;
+}
+
+#Description > section:nth-of-type(odd) > img {
+    float: left;
+    margin-right: 6em;
+    margin-left: 0;
+}
+
+@media (max-width: 1200px) {    
+    header nav {
+        padding-left: 10%;
+    }
+    
+    body > header, body > footer > *:only-child, body > section > div:only-child {
+        width: 100%;
+    }
+}
+
+@media (max-width: 920px) {    
+    #Climber {
+        display: none;
+    }
+    
+    header nav {
+        justify-content: space-around;
+    }
+    
+    header nav * {
+        margin-right: 0;
+    }
+    
+    header nav li {
+        margin-right: 1.5em;
+    }
+}
+
+@media (max-width: 850px) {    
+    #Description > section > img, #Description > section:nth-of-type(odd) > img {
+        float: none;
+        display: inline-block;
+        margin: 0;
+    }
+    
+    #Description > section {
+        text-align: center;
+        width: 100%;
+    }
+    
+    #Signup > div {
+        display: block;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    
+    #Signup {
+        min-height: 0;
+    }
+    
+    #Signup .Left {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    
+    #Signup .Left, #SignupForm input, #SignupForm button {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 680px) {    
+    header nav {
+        padding-left: 0;
+        display: block;
+        margin-top: 1em;
+    }
+    
+    section > header > h1 {
+        font-size: 5.6vw;
+    }
+    
+    section > h1, section > h2 {
+        line-height: 1.5;
+    }
+    
+    #Description > header > p {
+        font-size: 1.5rem;
+    }
+}

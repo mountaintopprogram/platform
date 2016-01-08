@@ -1,0 +1,55 @@
+        <article id="Main">
+            <div class="Text">
+                <h1>Everyone is an innovator</h1>
+                <p>The Mountaintop Program was born in 2015 at Columbia University, after the founders met at a tech entrepreneurship panel and realized that they shared a common vision of what education could become: not merely a way to instill rote knowledge, but a place where students could <em>create</em> their own futures, doubling down on their dreams and advancing society with the guidance of the best people possible - those who have already made the climb.</p>
+                <p>We offer in and after-school programs to NYC-area high schools and community organizations, bringing accomplished Mountaintop Guides into class for one hour per week to speak candidly about their endeavors, trials, and setbacks and address the uncertainties and fears which can prevent students from pursuing their dreams. We then flip mentorship on its head, challenging students to develop novel solutions of their own with the help of Guides and transforming your school into <em>the accelerator for everyone</em>. The program culminates in a demo day, where students present their projects to Guides, angel investors, and employers, creating change in their communities and securing their prospects for the future.</p>
+                <p>Click for more information on <a href="/schools">hosting a Mountaintop Program</a>, or <a href="http://goo.gl/forms/nqE2u66Otw">apply to be a Mountaintop Guide</a>.</p>
+            </div>
+            <img src="/images/visionaries.jpg" alt="Visionary Students" />
+        </article>
+    
+        <ul id="Audience" class="Split">
+            <li onClick="showVote()">
+                <section>
+                    <header>
+                        <img src="/images/student.jpg" alt="Students" />
+                        <h2>Students</h2>
+                        <h3>A world-class education in your backyard</h3>
+                    </header>
+            
+                    <p>What could you achieve if your school invested in your dreams? Mountaintop brings humanity's most creative and innovative thinkers to your school to inspire, challenge, and guide you. Think of it as your own personal accelerator program, with guides sharing their unique experiences and helping you discover and achieve your own personal goals.</p>
+                    <p id="Vote">Sound inspiring? <a href="javascript:showVote()" id="VoteLink">Vote for your school!</a></p>
+                    <div id="VoteForm">
+                        <form method="post" action="/vote.cgi">
+                            <input type="text" name="school" id="school" placeholder="School name" />
+                            <button type="submit">Vote</button>
+                        </form>
+                    </div>
+                </section>
+            </li>
+            <li data-href="/schools">
+                <section>
+                    <header>
+                        <img src="/images/school.jpg" alt="Schools" />
+                        <h2>High Schools</h2>
+                        <h3>Become an innovation thought leader</h3>
+                    </header>
+            
+                    <p>Our nation's educational institutions have been challenged to reinvent themselves as innovation hubs, with highly competitive Race to the Top grants available for the most effective schools. Mountaintop brings humanity's most accomplished innovators to your school, inspiring students and teachers alike while fitting within the constraints of the schoolday.</p>
+                    <p><a href="/schools">Find out more</a></p>
+                </section>
+            </li>
+            <li data-href="/guides">
+                <section>
+                    <header>
+                        <img src="/images/guide.jpg" alt="Guides" />
+                        <h2>Guides</h2>
+                        <h3>Train the next generation of leaders</h3>
+                    </header>
+            
+                    <p>Mountaintop Guides are some of the most inspiring thinkers and leaders of their age, but getting there is a difficult and lonely climb. Help make a difference in a student's life by sharing your experience as a Mountaintop Guide. Whether a single talk or weeks of collaboration, we can find the right option to fit your schedule, so you can do what you do best - inspire.</p>
+                    <p><a href="http://goo.gl/forms/nqE2u66Otw">Apply to be a Mountaintop Guide</a></p>
+                </section>
+            </li>
+        </ul>
+		<script type="text/javascript" src="audience.js"></script>

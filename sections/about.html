@@ -1,0 +1,88 @@
+        <article id="Main">
+            <div class="Text">
+                <h1>The Climb</h1>
+                <p>Mountaintop is a new educational initiative that dares students to find and follow their passions. We source outstanding innovators whose creativity and persistence have improved all of our lives, who we call Mountaintop Guides, then bring them to NYC-area high schools for candid talks about their climb, success, and the pitfalls they encountered along the way. Students come away inspired and energized, and knowing that they too have the potential to change the world.</p>
+                <p>Participating schools also have the option to pursue a more intensive workshop program, where Guides act as mentors as students pursue their own projects, creating the future of humanity without ever leaving the classroom.</p>
+                <p>Interested in <a href="/schools">hosting Mountaintop at your school?</a></p>
+            </div>
+            <img src="/images/painting.jpg" alt="Painting" />
+        </article>
+
+		<article id="Team" class="FourCol">
+            <h1>Meet The Team</h1>
+    
+            <ul class="Split">
+                <li>
+                    <section>
+                        <header>
+                            <img src="/images/team/michael.jpg" alt="Michael Barnathan" />
+                            <h2>Dr. Michael Barnathan</h2>
+                            <h3>Co-Founder</h3>
+                        </header>
+    
+                        <div class="Bio">
+                            <p>Michael Barnathan is an educational entrepreneur and technologist on a mission to spark a renaissance of creativity and innovation. Founder of <a href="http://www.projectpolymath.org" target="_blank">Project Polymath</a>, <a href="http://www.livingdiscoveries.com/demo" target="_blank">Living Discoveries</a>, and <a href="http://www.clipless.net" target="_blank">Clipless</a>, as well as a Director at <a href="http://www.amplify.com" target="_blank">Amplify Education</a>, former Google engineer, and frequent speaker at universities around the country, Michael has made furthering human potential the theme of his life and entrepreneurial career while bringing a deep background in technology and STEM education to the team. Michael holds a Ph. D. in Computer and Information Sciences from Temple University, focused on automatically diagnosing medical scans using computer vision and machine learning.</p>
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    <section>
+                        <header>
+                            <img src="/images/team/alejandro.jpg" alt="Alejandro Crawford" />
+                            <h2>Alejandro Crawford</h2>
+                            <h3>Co-Founder</h3>
+                        </header>
+                
+                        <div class="Bio">
+                            <p>Alejandro Crawford, Senior Consultant at <a href="http://www.accelerationgroup.net" target="_blank">Acceleration Group</a>, helps leaders of mission-driven businesses, CBOs, funders and governments seize “acceleration moments” to increase their impact on the markets/communities they serve. He develops actionable strategies that enable leaders get ahead of change, prove new models, create and measure impact, and turn around organizations. A frequent writer and speaker on how to equip people to produce solutions of their own, Crawford teaches courses in strategy, entrepreneurship and growth for FIT, the New School and Baruch. He earned his BA from Cornell and his MBA from the Tuck School of Business at Dartmouth.</p>
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    <section>
+                        <header>
+                            <img src="/images/team/deepti.jpg" alt="Deepti Kapur" />
+                            <h2>Deepti Sharma Kapur</h2>
+                            <h3>Co-Founder</h3>
+                        </header>
+                        <div class="Bio">
+                            <p>Deepti Sharma Kapur is the CEO and founder of <a href="http://www.foodtoeat.com" target="_blank">FoodtoEat</a>, an online ordering platform that connects corporates with local food trucks, restaurants and caterers to build corporate culture. She was honored in the Forbes 30 Under 30 list in 2013, and serves on the Board for the Business Center for New Americans, a non-profit that encourages immigrant entrepreneurship by providing micro-loans and financial education. Deepti also is on the board of The LAMP, an organization that educates students to understand 21st century media and advertising, and the implications they have on our thought process and decision making.</p>
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    <section>
+                        <header>
+                            <img src="/images/team/tarek.jpg" alt="Tarek Pertew" />
+                            <h2>Tarek Pertew</h2>
+                            <h3>Founding Advisor</h3>
+                        </header>
+                        <div class="Bio">
+                            <p>Tarek Pertew is the co-founder of <a href="http://www.uncubed.com" target="_blank">Uncubed</a>, a platform that connects people with high-growth digital careers through daily content, large-scale conferences and new economy skills classes. Tarek is also co-founder of <a href="http://www.nycfooty.com" target="_blank">NYC Footy</a>, an adult soccer league favored by many tech companies. Earlier, Tarek founded MyWorkster, a job fair platform for college alumni. Tarek is an advisor to the United Kingdom Trade & Investment Institute (UKTI) and his alma mater, The University of Virginia.</p>
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    <section>
+                        <header>
+                            <img src="/images/team/tiffany.jpg" alt="Tiffany Kwan" />
+                            <h2>Tiffany Kwan</h2>
+                            <h3>Strategist</h3>
+                        </header>
+                        <div class="Bio">
+                            <p>Tiffany Kwan is on a mission to foster creativity and passion in others. As an associate consultant at <a href="http://www.accelerationgroup.net" target="_blank">Acceleration Group</a>, she uses her combination of analytical and design skills to help innovative ventures and nonprofits transform their operations and launch new solutions that expand their access to opportunity.  In her undergraduate studies, despite completing three majors in Manufacturing Management, Production Management, and Entrepreneurship, she was left discovering how her education fit into her ambitions. During her last year in college, she picked up web development in order to create a platform that helps reduce the financial burden of college by promoting the recycling of used textbooks from student communities to the subsequent class. This project became a springboard for her mission and she has developed a deep commitment to enabling young people to discover their entrepreneurial potential and gain the skills to use it.</p>
+                        </div>
+                    </section>
+                </li>
+            </ul>
+        </article>
+    </div>
+
+	<script type="text/javascript">
+		$("#Team li").click(function(event) {
+			if (event.target.tagName != "A") {
+				$(this).parent().toggleClass("Merged");
+	            $(this).toggleClass("Active");
+			}
+        });
+	</script>

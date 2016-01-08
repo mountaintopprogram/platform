@@ -1,0 +1,79 @@
+body > header {
+	padding: 0.71em 1.71em;
+	text-align: center;
+}
+
+nav ul {
+	float: none;
+	margin: 1em 0 0 0;
+	display: block;
+}
+
+nav li, nav li:last-child {
+	margin: 1em inherit;
+	max-width: 25%;
+}
+
+#Logo {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#Main {
+	margin: 2em 0;
+}
+
+#Main > .Text, .Split section {
+	margin-right: inherit;
+	max-width: 34.21em;
+	width: 100%;
+}
+
+#Main > img {
+	max-width: 100%;
+	width: auto;
+}
+
+#Main h1 {
+	text-align: center;
+}
+
+@media (max-width: 380px) {
+	#Main h1 {
+		font-size: 8vw;
+	}
+}
+
+.Split section {
+	min-height: 0;
+}
+
+.Split > li section {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+body > footer .Social {
+	margin-bottom: 0;
+}
+
+body > footer .Attribution {
+	position: static;
+	display: block;
+	padding: 1em;
+	text-align: center;
+	line-height: 2;
+}
+
+.Merged li.Active section {
+	max-width: 50em;
+	width: 100%;
+}
+
+.Split.Merged > li {
+	display: none;
+}
+
+.Split.Merged > li.Active {
+	display: block;
+}

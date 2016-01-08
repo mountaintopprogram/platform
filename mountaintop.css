@@ -1,0 +1,344 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	margin: 0;
+	background-color: #f7f7f7;
+	color: #222222;
+	font-family: 'PT Sans', 'Myriad Pro', 'Segoe UI', 'Tahoma', sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+body > header {
+	background-color: white;
+	border-bottom: 1px solid #dddddd;
+	padding: 1.71em;
+}
+
+body > header * {
+	vertical-align: middle;
+}
+
+.Clear {
+	clear: both;
+}
+
+nav {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #5b5b5b;
+}
+
+nav li {
+	width: 9.75em;
+	text-align: right;
+}
+
+nav li:first-child {
+	width: auto;
+}
+
+a {
+	text-decoration: none;
+	color: #ff6600;
+}
+
+header a, footer a, header a:visited, footer a:visited {
+	color: inherit;
+}
+
+a > img {
+	border: none;
+}
+
+h1, h2 {
+	color: #3f3f3f;
+	font-weight: normal;
+	font-family: "Times New Roman", Times, serif;
+}
+
+h1 { font-size: 2.4em; }
+h2 { font-size: 1.71em; }
+h3 {
+	font-size: 1em;
+	font-weight: normal;
+	color: #777777;
+}
+
+img {
+	max-width: 100%;
+}
+
+.Content {
+	max-width: 80em;
+	margin: 0 auto;
+	clear: both;
+	position: relative;
+}
+
+#Container {
+	padding: 0 1em;
+	min-height: calc(100vh - 20.6em);
+	text-align: center;
+}
+
+nav ul {
+	float: right;
+}
+
+ul, ul > li {
+	display: inline-block;
+	padding-left: 0;
+	list-style: none;
+	vertical-align: middle;
+}
+
+#Logo {
+	margin: 0 5em 0 0.25em;
+}
+
+#Main {
+	margin: 4.71em 0 3.65em 0;
+}
+
+#Main > * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#Main * {
+	margin-top: 0;
+}
+
+#Main > .Text {
+	width: 40.5em;
+	max-width: 50vw;
+	text-align: justify;
+	margin: 2em 4.86em 2em 0;
+	margin-right: 5vw;
+}
+
+#Main > img {
+	width: 38.5vw;
+	max-width: 31.85em;
+}
+
+#Main p {
+	font-size: 0.954em;
+}
+
+#Main #SchoolHeader {
+	text-align: left;
+	font-size: 2em;
+}
+
+ul.Split {
+	text-align: center;
+}
+
+ul.Split > li {
+	text-align: left;
+	vertical-align: top;
+	margin: 0 0 1.5em 0;
+}
+
+.FourCol .Merged section {
+	-webkit-transition: opacity 0.5s 0s ease-in, width 1s 0.2s ease-in-out, margin 1s 0.2s ease-in-out;
+	-moz-transition: opacity 0.5s 0s ease-in, width 1s 0.2s ease-in-out, margin 1s 0.2s ease-in-out;
+	-ms-transition: opacity 0.5s 0s ease-in, width 1s 0.2s ease-in-out, margin 1s 0.2s ease-in-out;
+	-o-transition: opacity 0.5s 0s ease-in, width 1s 0.2s ease-in-out, margin 1s 0.2s ease-in-out;
+	transition: opacity 0.5s 0s ease-in, width 1s 0.2s ease-in-out, margin 1s 0.2s ease-in-out;
+}
+
+.FourCol section {
+	-webkit-transition: width 1s 0s ease-in-out, margin 1s 0s ease-in-out, opacity 0.5s 1.0s ease-out;
+	-moz-transition: width 1s 0s ease-in-out, margin 1s 0s ease-in-out, opacity 0.5s 1.0s ease-out;
+	-ms-transition: width 1s 0s ease-in-out, margin 1s 0s ease-in-out, opacity 0.5s 1.0s ease-out;
+	-o-transition: width 1s 0s ease-in-out, margin 1s 0s ease-in-out, opacity 0.5s 1.0s ease-out;
+	transition: width 1s 0s ease-in-out, margin 1s 0s ease-in-out, opacity 0.5s 1.0s ease-out;
+}
+
+.Split section {
+	background-color: white;
+	display: inline-block;
+	width: 29vw;
+	max-width: 23.67em;
+	min-height: 38em;
+}
+
+.FourCol .Split section {
+	background-color: inherit;
+}
+
+.FourCol .Split section, #Team .Bio:after {
+	width: 19em;
+	max-width: none;
+}
+
+.Split.Merged section {
+	width: 0;
+	height: 0;
+	min-height: 0;
+	max-height: 0;
+	opacity: 0;
+}
+
+.Merged li.Active section {
+	width: 50em;
+	opacity: 1;
+}
+
+section > *, section > header > * {
+	margin-left: 1.14rem;
+	margin-right: 1.43rem;
+}
+
+section > header, section > header > img {
+	max-width: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+.Split > li {
+	display: inline-block;
+}
+
+.Split > li section {
+	margin-right: 4.12em;
+	margin-right: 3vw;
+}
+
+.FourCol .Split > li section {
+	margin-right: 1.07em;
+	margin-left: 0;
+}
+
+.FourCol .Split.Merged section {
+	margin-right: 0;
+}
+
+#Team .Split img {
+	width: 14.86em;
+	border-radius: 100%;
+}
+
+.Split > li:last-child > section {
+	margin-right: 0;
+}
+
+.Split p {
+	line-height: 1.43;
+}
+
+section > header > h2 {
+	margin-bottom: 0;
+}
+
+.FourCol {
+	margin-top: 7em;
+	padding: 5em 0 2em 0;
+	border-top: 1px dashed #cccccc;
+}
+
+.FourCol h1 {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 1.5em;
+}
+
+.FourCol header {
+	text-align: center;
+}
+
+.FourCol ul > li {
+	max-height: 31em;
+}
+
+.FourCol ul > li.Active {
+	max-height: none;
+}
+
+.FourCol ul {
+	display: block;
+}
+
+.Split li {
+	cursor: pointer;
+}
+
+#Team li {
+	overflow: hidden;
+	margin-bottom: 4em;
+}
+
+#Team li.Active {
+	overflow: inherit;
+}
+
+#Team .Bio:after {
+	content: ' ';
+	position: absolute;
+	bottom: 3em;
+	height: 4.5em;
+	background-image: linear-gradient(to bottom, rgba(247, 247, 247, 0), rgba(247, 247, 247, 1));
+}
+
+#Team .Merged .Bio:after {
+	opacity: 0;
+}
+
+section > header > h3 {
+	margin-top: 0.5em;
+	margin-bottom: 1.5em;
+}
+
+body > footer {
+	color: white;
+	background-color: #666666;
+	margin-top: 1.5em;
+	padding: 0.5em 0 0 0;
+	text-align: center;
+}
+
+address, cite {
+	font-style: normal;
+}
+
+body > footer .Attribution {
+	text-align: left;
+	line-height: 1.5;
+	position: absolute;
+	left: 0;
+	top: 17%;
+	top: calc(50% - 1.5em);
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#VoteForm {
+	display: none;
+}
+
+#VoteForm input, #VoteForm button {
+	margin-bottom: 2em;
+	padding: 0.25em 0.5em;
+	font-style: italic;
+}
+
+.RequestSuccess {
+	font-weight: bold;
+	color: darkgreen;
+}
+
+.RequestFailure {
+	font-weight: bold;
+	color: darkred;
+}
+
