@@ -214,6 +214,91 @@ footer {
     margin-left: 0;
 }
 
+article#Project {
+    position: relative;
+    padding-top: 1px;
+    text-align: left;
+}
+
+.SplitBg {
+    background-color: #99d6ce;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+}
+
+.Foreground {
+    border-radius: 35px;
+    border: 2px solid #62baa8;
+    color: black;
+    background-color: white;
+    width: 80em;
+    margin: 4em auto;
+    padding: 1em 3%;
+    box-sizing: border-box;
+}
+
+#Project #Details {
+    font-weight: 400;
+}
+
+#Project #Details h1, #Project #Team h2 {
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.ImageCarousel * {
+    vertical-align: middle;
+}
+
+.ImageCarousel a {
+    font-size: 400%;
+    text-decoration: none;
+    color: #1b7865;
+}
+
+.ImageCarousel img {
+    height: 20em;
+}
+
+#Team h3 {
+    font-weight: 200;
+    font-size: 165%;
+}
+
+#Team h2, #Team h3 {
+    margin: 0.25em 0;
+}
+
+#Team {
+    text-align: justify;
+    text-align-last: center;
+    line-height: 1.25;
+    margin-top: 4em;
+}
+
+#Team ul {
+    list-style: none;
+    padding: 0;
+}
+
+#Team ul li {
+    display: inline-block;
+    margin: 2em;
+}
+
+#Team ul img {
+	width: 13.86em;
+	border-radius: 100%;
+}
+
+#Team .Bio {
+    display: none;
+}
+
 @media (max-width: 1200px) {    
     header nav {
         padding-left: 10%;
