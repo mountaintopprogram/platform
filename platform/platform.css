@@ -71,6 +71,11 @@ section {
     color: #585858;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+}
+
 #Signup > div {
     display: flex;
 }
@@ -91,20 +96,20 @@ header nav {
     min-height: 128px;
 }
 
-header nav li {
+body > header > nav li {
     display: inline;
 }
 
-nav ul {
+body > header > nav ul {
     padding-top: 0.5em;
 }
 
-nav ul, nav a {
+body > header > nav ul, body > header > nav a {
     color: #58585a;
     text-decoration: none;
 }
 
-nav ul li img {
+body > header > nav ul li img {
     height: 1.75em;
 }
 
@@ -230,12 +235,12 @@ article#Project {
     display: block;
 }
 
-.Foreground {
+.Foreground, aside, .Skills li {
     border-radius: 35px;
-    border: 2px solid #62baa8;
+    border: 3px solid #62baa8;
     color: black;
     background-color: white;
-    width: 80em;
+    max-width: 80em;
     margin: 4em auto;
     padding: 1em 3%;
     box-sizing: border-box;
@@ -243,11 +248,18 @@ article#Project {
 
 #Project #Details {
     font-weight: 400;
+    line-height: 1.5;
 }
 
-#Project #Details h1, #Project #Team h2 {
+#Project #Details h1, #Team li > section > header h2 {
     text-transform: uppercase;
     font-weight: 200;
+}
+
+.ImageCarousel {
+    text-align: center;
+    margin-bottom: 4em;
+    white-space: nowrap;
 }
 
 .ImageCarousel * {
@@ -261,7 +273,7 @@ article#Project {
 }
 
 .ImageCarousel img {
-    height: 20em;
+    max-width: 100%;
 }
 
 #Team h3 {
@@ -280,17 +292,14 @@ article#Project {
     margin-top: 4em;
 }
 
-#Team ul {
-    list-style: none;
-    padding: 0;
-}
-
-#Team ul li {
+#Team > ul > li {
     display: inline-block;
     margin: 2em;
+    text-align: center;
+    text-align-last: auto;
 }
 
-#Team ul img {
+#Team > ul img {
 	width: 13.86em;
 	border-radius: 100%;
 }
@@ -299,7 +308,74 @@ article#Project {
     display: none;
 }
 
-@media (max-width: 1200px) {    
+.Comments {
+    color: black;
+    font-weight: 400;
+}
+
+.Comments > article {
+    padding: 2em 0;
+    border-top: 2px solid #53b39f;
+}
+
+.Comments > article:first-of-type {
+    border-top: none;
+}
+
+.Comments > article:after {
+    content: ""
+    clear: left;
+}
+
+.Comments address {
+    width: 7em;
+    max-height: 7em;
+    overflow: hidden;
+    float: left;
+    margin-right: 2em;
+}
+
+.Comments address img {
+	border-radius: 100%;
+    width: 100%;
+}
+
+#Team aside {
+    position: absolute;
+    text-align: left;
+}
+
+aside {
+    display: flex;
+    font-weight: 400;
+}
+
+aside nav {
+    padding: 1em;
+}
+ 
+aside header {
+    margin-bottom: 4em;
+}
+
+aside h1 {
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+aside h2 {
+    font-weight: 200;
+}
+
+aside .Skills li {
+    display: inline-block;
+    font-size: 150%;
+    padding: 0.5em 1em;
+    margin: 0.5em 0.5em 0 0.5em;
+}
+
+@media (max-width: 1200px) {
     header nav {
         padding-left: 10%;
     }
