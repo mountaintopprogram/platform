@@ -182,7 +182,7 @@ footer {
     margin-right: 2%;
 }
 
-#SignupForm button {
+button {
     margin-top: 1em;
     background-color: #20ac91;
     color: white;
@@ -219,7 +219,7 @@ footer {
     margin-left: 0;
 }
 
-article#Project {
+body > article {
     position: relative;
     padding-top: 1px;
     text-align: left;
@@ -251,7 +251,7 @@ article#Project {
     line-height: 1.5;
 }
 
-#Project #Details h1, #Team li > section > header h2 {
+#Details h1, #Team li > section > header h2 {
     text-transform: uppercase;
     font-weight: 200;
 }
@@ -348,12 +348,14 @@ article#Project {
 aside {
     display: flex;
     font-weight: 400;
+    padding-left: 1em;
 }
 
 aside nav {
-    padding: 1em;
+    padding: 3em 1em;
+    margin-right: 2em;
 }
- 
+
 aside header {
     margin-bottom: 4em;
 }
@@ -373,6 +375,20 @@ aside .Skills li {
     font-size: 150%;
     padding: 0.5em 1em;
     margin: 0.5em 0.5em 0 0.5em;
+}
+
+aside .Skills li:hover {
+    background-color: #20ac91;
+    color: white;
+}
+
+aside button {
+    font-size: 150%;
+    border-radius: 40px;
+    display: block;
+    margin-top: 0.5em;
+    width: 100%;
+    padding: 0.5em 2em;
 }
 
 @media (max-width: 1200px) {
