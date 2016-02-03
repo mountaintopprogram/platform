@@ -16,6 +16,11 @@ body {
     background-color: white;
 }
 
+img {
+    border: none;
+    display: inline;
+}
+
 body > header, body > footer > *:only-child, body > section > div:only-child {
     width: 80em;
     margin: 0 auto;
@@ -76,6 +81,11 @@ ul {
     padding: 0;
 }
 
+form {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 #Signup > div {
     display: flex;
 }
@@ -104,7 +114,7 @@ body > header > nav ul {
     padding-top: 0.5em;
 }
 
-body > header > nav ul, body > header > nav a {
+body > header > nav ul, body > header > nav a, #MainFeed h1 {
     color: #58585a;
     text-decoration: none;
 }
@@ -120,7 +130,7 @@ footer {
     margin-top: 7em;
 }
 
-.TwoCol .FormContainer, input {
+.FormContainer, input {
     border: 2px solid #62baa8;
 }
 
@@ -299,45 +309,53 @@ body > article {
     text-align-last: auto;
 }
 
-#Team > ul img {
+.Avatar {
 	width: 13.86em;
 	border-radius: 100%;
+    vertical-align: middle;
+}
+
+.Feed address .Avatar {
+    width: 100%;
 }
 
 #Team .Bio {
     display: none;
 }
 
-.Comments {
+.Feed {
     color: black;
     font-weight: 400;
 }
 
-.Comments > article {
+.Feed > article {
     padding: 2em 0;
     border-top: 2px solid #53b39f;
 }
 
-.Comments > article:first-of-type {
+.Feed > article:first-of-type {
     border-top: none;
 }
 
-.Comments > article:after {
+#MainFeed .Feed > article {
+    padding: 5em 0;
+}
+
+#MainFeed .Feed > article:first-of-type {
+    padding-top: 1em;
+}
+
+.Feed > article:after {
     content: ""
     clear: left;
 }
 
-.Comments address {
+.Feed address {
     width: 7em;
     max-height: 7em;
     overflow: hidden;
     float: left;
     margin-right: 2em;
-}
-
-.Comments address img {
-	border-radius: 100%;
-    width: 100%;
 }
 
 #Team aside {
@@ -389,6 +407,54 @@ aside button {
     margin-top: 0.5em;
     width: 100%;
     padding: 0.5em 2em;
+}
+
+#MainFeed h1 {
+    font-size: 250%;
+}
+
+.Post {
+    vertical-align: middle;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    margin: 4.5em 0;
+    display: table;
+}
+
+.Post .Avatar {
+    max-width: 7em;
+    max-height: 100%;
+    display: table-cell;
+}
+
+.Post form {
+    display: table-cell;
+    border: none;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    padding-left: 2em;
+}
+
+.Post form input {
+    width: 100%;
+    border: none;
+    font-size: 150%;
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
+    letter-spacing: 0.05em;
+}
+
+.Post ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #585858;
+}
+.Post ::-moz-placeholder { /* Firefox 19+ */
+    color: #585858;
+}
+.Post :-ms-input-placeholder { /* IE 10+ */
+    color: #585858;
+}
+.Post :-moz-placeholder { /* Firefox 18- */
+    color: #585858;
 }
 
 @media (max-width: 1200px) {
